@@ -1,0 +1,67 @@
+.navbar-brand {
+  font-size: 40px;
+  font-weight: bolder;
+}
+a {
+  color: black;
+}
+.menu a {
+  padding: 0 50px;
+}
+.carousel-caption {
+  color: white;
+}
+#china {
+  height: 740px;
+}
+.icons {
+  text-align: center;
+  margin: auto;
+}
+.social {
+  display: block;
+  padding: 0 20px;
+  width: 15%;
+  height: 15%;
+  margin: 20px auto;
+}
+.profile {
+  border-radius: 50%;
+  height: 140px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+h5,
+h4,
+p {
+  text-align: center;
+}
+h6 {
+  color: grey;
+  text-align: center;
+}
+.top {
+  margin-bottom: 40px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 300px;
+  width: 500px;
+}
+.gmap_canvas {
+  display: block;
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 400px;
+  margin: 0 0 0 150px;
+}
+.contact-info p {
+  text-align: left;
+}
+.travel {
+  height: 300px;
+  width: 400px;
+}
