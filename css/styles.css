@@ -129,3 +129,114 @@ label[for="email"],
 label[for="password"] {
   text-align: left;
 }
+
+#cubatext{
+   position: absolute;
+   text-align: left;
+   bottom: 3.2vh;
+   left: 3.8vw;
+   font-weight: bolder;
+   border-style: solid;
+   border-color: white;
+   border-width: 3px;
+   height: 160px;
+   width: 200px;
+   color: white;
+   font-size: 25px;
+   line-height: 1;
+   padding: 8px;
+   background: rgba(0, 0, 0, 0.7);
+   display: none;
+}
+#indiatext{
+   position: absolute;
+   text-align: left;
+   bottom: 3.2vh;
+   left: 3.8vw;
+   font-weight: bolder;
+   border-style: solid;
+   border-color: white;
+   border-width: 3px;
+   height: 160px;
+   width: 200px;
+   color: white;
+   font-size: 25px;
+   line-height: 1;
+   padding: 8px;
+   background: rgba(0, 0, 0, 0.7);
+   display: none;
+}
+#chinatext{
+ position: absolute;
+ text-align: left;
+ bottom: 3.2vh;
+ left: 3.8vw;
+ font-weight: bolder;
+ border-style: solid;
+ border-color: white;
+ border-width: 3px;
+ height: 160px;
+ width: 200px;
+ color: white;
+ font-size: 25px;
+ line-height: 1;
+ padding: 8px;
+ background: rgba(0, 0, 0, 0.7);
+ display: none;
+}
+
+#paristext{
+ position: absolute;
+ text-align: left;
+ bottom: 3.2vh;
+ left: 3.8vw;
+ font-weight: bolder;
+ border-style: solid;
+ border-color: white;
+ border-width: 3px;
+ height: 160px;
+ width: 200px;
+ color: white;
+ font-size: 25px;
+ line-height: 1;
+ padding: 8px;
+ background: rgba(0, 0, 0, 0.7);
+ display: none;
+}
+
+#egypttext{
+   position: absolute;
+   text-align: left;
+   bottom: 3.2vh;
+   left: 3.8vw;
+   font-weight: bolder;
+   border-style: solid;
+   border-color: white;
+   border-width: 3px;
+   height: 160px;
+   width: 200px;
+   color: white;
+   font-size: 25px;
+   line-height: 1;
+   padding: 8px;
+   background: rgba(0, 0, 0, 0.7);
+   display: none;
+}
+#japantext{
+   position: absolute;
+   text-align: left;
+   bottom: 3.2vh;
+   left: 3.8vw;
+   font-weight: bolder;
+   border-style: solid;
+   border-color: white;
+   border-width: 3px;
+   height: 160px;
+   width: 200px;
+   color: white;
+   font-size: 25px;
+   line-height: 1;
+   padding: 8px;
+   background: rgba(0, 0, 0, 0.7);
+   display: none;
+}
