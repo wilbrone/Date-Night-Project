@@ -107,6 +107,14 @@ label {
 .sign {
   margin-left: 10px;
 }
+.signs {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.signs {
+  margin-left: 10px;
+}
 #date {
   margin: 20px 0 0 0;
   text-align: left;
@@ -128,4 +136,11 @@ hr {
 label[for="email"],
 label[for="password"] {
   text-align: left;
+}
+
+#sign-up{
+  display: none;
+}
+#head2{
+  display: none;
 }

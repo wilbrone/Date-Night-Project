@@ -42,18 +42,19 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-body">
-              <h3 class="card-title">Login</h3>
+              <h3 class="card-title" id="head1">Login</h3>
+              <h3 class="card-title" id="head2">SignUp</h3>
               <br />
               <hr />
               <br />
               <form id="sign-in">
-                <div class="form-group">
-                  <label for="email" style="float: left;">E-mail Address</label
+                <div class="form-group" id="loginn">
+                  <label for="user_name" style="float: left;">User Name</label
                   ><br />
                   <input
-                    type="email"
-                    name="email"
-                    id="email"
+                    type="text"
+                    name="user_name"
+                    id="user_name"
                     class="form-control"
                   />
                   <br />
@@ -65,13 +66,70 @@
                     id="password"
                     class="form-control"
                   /><br />
-                  <button class="btn-danger log">Login</button>
+                    <button type="submit" class="btn-danger log">
+                      <a href="index.html">
+                        Login
+                      </a>
+                    </button>
                   <button class="btn-danger sign">Sign Up</button> <br /><br />
                   <hr />
                   <br />
                   <a href="#">Reset Password?</a>
                 </div>
               </form>
+
+                <!-- form for signup -->
+                <form id="sign-up">
+                  <div class="form-group" id="signupp">
+                    <!-- <label for="name" style="float: left;">Full Name</label> -->
+                    <br />
+                    <input
+                      type="text"
+                      name="name"
+                      id="f_name"
+                      class="form-control"
+                      placeholder="Full Name"
+                    />
+                    <br />
+                    <!-- <label for="u_name" style="float: left;">User Name</label> -->
+                    <!-- <br /> -->
+                    <input
+                      type="text"
+                      name="u_name"
+                      id="u_name"
+                      class="form-control"
+                      placeholder="User Name"
+                    />
+                    <br />
+                    <!-- <label for="email" style="float: left;">Email Address</label
+                    ><br /> -->
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                    />
+                    <br />
+                    <!-- <label for="password" style="float: left;">Password</label
+                    ><br /> -->
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="form-control"
+                      placeholder="Password"
+                    /><br />
+                    <button class="btn-danger log" id="cancel">Cancel</button>
+                    <button type="submit" class="btn-danger signs" href="index.html">
+                      <!-- <a href="index.html"> -->
+                        Sign Up
+                      <!-- </a> -->
+                    </button> <br /><br />
+                  </div>
+                </form>
+                <!-- end of signup form -->
+
             </div>
           </div>
         </div>
