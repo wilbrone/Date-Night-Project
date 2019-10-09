@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/bootstrap.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/js/jquery-3.4.1.js"></script>
-    <script src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Date Night</title>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-light bg-light">
       <span class="navbar-brand mb-0 h1"
-        > <img src="/images/heart.png" alt=""> Date Night <img src="/images/iconmonstr-party-14-48.png" alt=""
+        > <img src="images/heart.png" alt=""> Date Night <img src="/images/iconmonstr-party-14-48.png" alt=""
       /></span>
       <div class="menu">
         <span><a href="#themes">Themes</a></span>
@@ -38,7 +38,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/images/taj.jpg" class="d-block w-100" alt="..." />
+              <img src="images/taj.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Bollywood</h5>
                 <p>
@@ -47,7 +47,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/images/cuba1.jpg" class="d-block w-100" alt="..." />
+              <img src="images/cuba1.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Cuba</h5>
                 <p>
@@ -59,7 +59,7 @@
             <div class="carousel-item">
               <img
                 id="china"
-                src="/images/china.jpg"
+                src="images/china.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/images/paris.jpg" class="d-block w-100" alt="..." />
+              <img src="images/paris.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h5>France</h5>
                 <p>
@@ -80,7 +80,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/images/egpyt.jpg" class="d-block w-100" alt="..." />
+              <img src="images/egpyt.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Egypt</h5>
                 <p>
@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="/images/Japan.jpg" class="d-block w-100" alt="..." />
+              <img src="images/Japan.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h5>Japan</h5>
                 <p>
@@ -146,19 +146,43 @@
       <br />
       <div class="row">
         <div class="col-md-4 ">
-          <img class="img-fluid travel" src="/images/india theme.jpg" alt="" />
+          <img class="img-fluid travel" src="images/india theme.jpg" alt="" />
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Secondary</button>  
+          <div>
+            <p id=""></p>
+          </div>
+        </div>
+
+          <!-- first theme modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of first modal -->
+
+        <div class="col-md-4 ">
+          <img class="img-fluid travel" src="images/cuba theme.jpg" alt="" />
           <div>
             <p id=""></p>
           </div>
         </div>
         <div class="col-md-4 ">
-          <img class="img-fluid travel" src="/images/cuba theme.jpg" alt="" />
-          <div>
-            <p id=""></p>
-          </div>
-        </div>
-        <div class="col-md-4 ">
-          <img class="img-fluid travel" src="/images/china theme.jpg" alt="" />
+          <img class="img-fluid travel" src="images/china theme.jpg" alt="" />
           <div>
             <p id=""></p>
           </div>
@@ -166,19 +190,19 @@
       </div>
       <div class="row">
         <div class="col-md-4 ">
-          <img class="img-fluid travel" src="/images/paris theme.jpg" alt="" />
+          <img class="img-fluid travel" src="images/paris theme.jpg" alt="" />
           <div>
             <p id=""></p>
           </div>
         </div>
         <div class="col-md-4 ">
-          <img class="img-fluid travel" src="/images/egypt theme.jpg" alt="" />
+          <img class="img-fluid travel" src="images/egypt theme.jpg" alt="" />
           <div>
             <p id=""></p>
           </div>
         </div>
         <div class="col-md-4 ">
-          <img class="img-fluid travel" src="/images/japan.jpg" alt="" />
+          <img class="img-fluid travel" src="images/japan.jpg" alt="" />
           <div>
             <p id=""></p>
           </div>
@@ -214,7 +238,7 @@
             <h6>Front-End Development</h6>
           </div>
           <div class="col-md-4">
-            <img class="profile img-fluid" src="/images/koshin.jpg" alt="" />
+            <img class="profile img-fluid" src="images/koshin.jpg" alt="" />
             <h5>Koshin</h5>
             <h6>Co-founder</h6>
             <h6>Front-End Development</h6>
@@ -222,7 +246,7 @@
           <div class="col-md-4">
             <img
               class="profile img-fluid"
-              src="/images/iconmonstr-user-20-120.png"
+              src="images/iconmonstr-user-20-120.png"
               alt=""
             />
             <h5>Greg</h5>
@@ -234,7 +258,7 @@
           <div class="col-md-6">
             <img
               class="profile img-fluid"
-              src="/images/iconmonstr-user-20-120.png"
+              src="images/iconmonstr-user-20-120.png"
               alt=""
             />
             <h5>Bella</h5>
@@ -244,7 +268,7 @@
           <div class="col-md-6">
             <img
               class="profile img-fluid"
-              src="/images/WILBRONE-OKOTH.JPG"
+              src="images/WILBRONE-OKOTH.JPG"
               alt=""
             />
             <h5>Will</h5>
@@ -294,36 +318,37 @@
         <div class="row icons">
           <img
             class="img-fluid social"
-            src="/images/iconmonstr-facebook-5-72.png"
+            src="images/iconmonstr-facebook-5-72.png"
             alt=""
           />
 
           <img
             class="img-fluid social"
-            src="/images/iconmonstr-twitter-5-72.png"
+            src="images/iconmonstr-twitter-5-72.png"
             alt=""
           />
 
           <img
             class="img-fluid social"
-            src="/images/iconmonstr-instagram-15-72.png"
+            src="images/iconmonstr-instagram-15-72.png"
             alt=""
           />
 
           <img
             class="img-fluid social"
-            src="/images/iconmonstr-whatsapp-5-72.png"
+            src="images/iconmonstr-whatsapp-5-72.png"
             alt=""
           />
 
           <img
             class="img-fluid social"
-            src="/images/iconmonstr-youtube-5-72.png"
+            src="images/iconmonstr-youtube-5-72.png"
             alt=""
           />
         </div>
       </div>
     </nav>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
