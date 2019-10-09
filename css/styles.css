@@ -271,6 +271,52 @@ label[for="password"] {
   display: none;
 }
 
+.bck1,
+.bck2,
+.bck3,
+.bck4,
+.bck5,
+.bck6 {
+  background-color: black;
+  color:white;
+}
+
+#exampleModal1 {
+  background-image: url(../images/Indianfood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal2 {
+  background-image: url(../images/Cubanfood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal3 {
+  background-image: url(../images/chinesefood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal4 {
+  background-image: url(../images/Francefood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal5 {
+  background-image: url(../images/arabicfood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#exampleModal6 {
+  background-image: url(../images/Japanfood.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* .indiatheme,
 .cubatheme,
 .chinatheme {
