@@ -3,26 +3,33 @@ html {
   border: 0;
   padding: 0;
 }
+
 .navbar-brand {
   font-size: 40px;
   font-weight: bolder;
 }
+
 a {
   color: black;
 }
+
 .menu a {
   padding: 0 50px;
 }
+
 .carousel-caption {
   color: white;
 }
+
 #china {
   height: 740px;
 }
+
 .icons {
   text-align: center;
   margin: auto;
 }
+
 .social {
   display: block;
   padding: 0 20px;
@@ -30,6 +37,7 @@ a {
   height: 15%;
   margin: 20px auto;
 }
+
 .profile {
   border-radius: 50%;
   height: 140px;
@@ -37,24 +45,29 @@ a {
   display: block;
   margin: 0 auto;
 }
+
 h5,
 h4,
 p {
   text-align: center;
 }
+
 h6 {
   color: grey;
   text-align: center;
 }
+
 .top {
   margin-bottom: 40px;
 }
+
 .mapouter {
   position: relative;
   text-align: right;
   height: 300px;
   width: 500px;
 }
+
 .gmap_canvas {
   display: block;
   overflow: hidden;
@@ -63,16 +76,20 @@ h6 {
   width: 400px;
   margin: 0 0 0 150px;
 }
+
 .contact-info p {
   text-align: left;
 }
+
 .travel {
   height: 300px;
   width: 400px;
 }
+
 #landing {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 #landingbg {
   background-image: url("../images/cherry.jpg");
   background-size: cover;
@@ -80,45 +97,55 @@ h6 {
   height: 100%;
   width: 100%;
 }
+
 #logo {
   font-size: 40px;
   font-weight: bolder;
   color: white;
 }
+
 #landing-content {
   color: white;
   margin: auto;
   padding-top: 100px;
   text-align: center;
 }
+
 .card-title {
   color: black;
 }
+
 label {
   color: black;
   text-align: left;
 }
+
 .log,
 .sign {
   padding: 5px 10px;
   border-radius: 5px;
   margin-top: 10px;
 }
+
 .sign {
   margin-left: 10px;
 }
+
 #date {
   margin: 20px 0 0 0;
   text-align: left;
   padding-left: 20px;
   font-weight: bolder;
 }
+
 hr {
   margin: 0;
 }
+
 #info {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 #info p {
   text-align: left;
   padding: 0 20px;
@@ -130,113 +157,134 @@ label[for="password"] {
   text-align: left;
 }
 
-#cubatext{
-   position: absolute;
-   text-align: left;
-   bottom: 3.2vh;
-   left: 3.8vw;
-   font-weight: bolder;
-   border-style: solid;
-   border-color: white;
-   border-width: 3px;
-   height: 160px;
-   width: 200px;
-   color: white;
-   font-size: 25px;
-   line-height: 1;
-   padding: 8px;
-   background: rgba(0, 0, 0, 0.7);
-   display: none;
-}
-#indiatext{
-   position: absolute;
-   text-align: left;
-   bottom: 3.2vh;
-   left: 3.8vw;
-   font-weight: bolder;
-   border-style: solid;
-   border-color: white;
-   border-width: 3px;
-   height: 160px;
-   width: 200px;
-   color: white;
-   font-size: 25px;
-   line-height: 1;
-   padding: 8px;
-   background: rgba(0, 0, 0, 0.7);
-   display: none;
-}
-#chinatext{
- position: absolute;
- text-align: left;
- bottom: 3.2vh;
- left: 3.8vw;
- font-weight: bolder;
- border-style: solid;
- border-color: white;
- border-width: 3px;
- height: 160px;
- width: 200px;
- color: white;
- font-size: 25px;
- line-height: 1;
- padding: 8px;
- background: rgba(0, 0, 0, 0.7);
- display: none;
+#cubatext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
 }
 
-#paristext{
- position: absolute;
- text-align: left;
- bottom: 3.2vh;
- left: 3.8vw;
- font-weight: bolder;
- border-style: solid;
- border-color: white;
- border-width: 3px;
- height: 160px;
- width: 200px;
- color: white;
- font-size: 25px;
- line-height: 1;
- padding: 8px;
- background: rgba(0, 0, 0, 0.7);
- display: none;
+#indiatext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
 }
 
-#egypttext{
-   position: absolute;
-   text-align: left;
-   bottom: 3.2vh;
-   left: 3.8vw;
-   font-weight: bolder;
-   border-style: solid;
-   border-color: white;
-   border-width: 3px;
-   height: 160px;
-   width: 200px;
-   color: white;
-   font-size: 25px;
-   line-height: 1;
-   padding: 8px;
-   background: rgba(0, 0, 0, 0.7);
-   display: none;
+#chinatext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
 }
-#japantext{
-   position: absolute;
-   text-align: left;
-   bottom: 3.2vh;
-   left: 3.8vw;
-   font-weight: bolder;
-   border-style: solid;
-   border-color: white;
-   border-width: 3px;
-   height: 160px;
-   width: 200px;
-   color: white;
-   font-size: 25px;
-   line-height: 1;
-   padding: 8px;
-   background: rgba(0, 0, 0, 0.7);
-   display: none;
+
+#paristext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
 }
+
+#egypttext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#japantext {
+  position: absolute;
+  text-align: left;
+  bottom: 5.2vh;
+  left: 5.2vw;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  height: 160px;
+  width: 200px;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+/* .indiatheme,
+.cubatheme,
+.chinatheme {
+  float: left;
+  width: 110%;
+  padding: 5%;
+  margin: auto;
+}
+
+.paristheme,
+.egypttheme,
+.japantheme {
+  float: left;
+  width: 110%;
+  padding: 5%;
+  margin: auto;
+} */
