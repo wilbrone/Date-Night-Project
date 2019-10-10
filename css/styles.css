@@ -40,12 +40,14 @@ a {
 
 .profile {
   border-radius: 50%;
-  height: 140px;
-  width: 150px;
+  height: 170px;
+  width: 180px;
   display: block;
   margin: 0 auto;
 }
-
+h4{
+  font-size: 40px;
+}
 h5,
 h4,
 p {
@@ -63,22 +65,18 @@ h6 {
 
 .mapouter {
   position: relative;
-  text-align: right;
-  height: 300px;
-  width: 500px;
+  margin: auto;
 }
 
 .gmap_canvas {
   display: block;
   overflow: hidden;
   background: none !important;
-  height: 300px;
-  width: 400px;
-  margin: 0 0 0 150px;
 }
 
-.contact-info p {
-  text-align: left;
+.contact-info{
+  text-align: center;
+  margin: 30px 0 50px 0;
 }
 
 .travel {
@@ -145,6 +143,11 @@ label {
   font-weight: bolder;
 }
 
+.call, .visit, .message{
+  height: 40px;
+  width: 40px;
+}
+
 hr {
   margin: 0;
 }
@@ -157,11 +160,6 @@ hr {
   text-align: left;
   padding: 0 20px;
   font-size: 15px;
-}
-
-label[for="email"],
-label[for="password"] {
-  text-align: left;
 }
 
 #sign-up{
