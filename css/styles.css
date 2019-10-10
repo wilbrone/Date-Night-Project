@@ -340,23 +340,24 @@ hr {
 
 /* GIVES THE FIRST LETTER AS THE PROFILE PIC */
 #profileImage {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: #512DA8;
   font-size: 50px;
   color: #fff;
   text-align: center;
-  line-height: 170%;
+  line-height: 125%;
 
   position: absolute;
-  top: 0%;
-  right: 2%;
+  top: 15%;
+  right: 4%;
   /* margin: 20px 0; */
 }
 .output{
   font-weight: bold;
   font-size: 1.2em;
+  font-family: 'Oleo Script', cursive;
 }
 
 
