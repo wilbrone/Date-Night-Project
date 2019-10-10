@@ -278,7 +278,7 @@ label[for="password"] {
 .bck5,
 .bck6 {
   background-color: black;
-  color:white;
+  color: white;
 }
 
 #exampleModal1 {
@@ -288,7 +288,7 @@ label[for="password"] {
 }
 
 #exampleModal2 {
-  background-image: url(../images/Cubanfood.jpeg);
+  background-image: url(../images/tango2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -317,6 +317,18 @@ label[for="password"] {
   background-size: cover;
 }
 
+#indiapckgs,
+#cubapckgs,
+#chinapckgs,
+#parispckgs,
+#egyptpckgs,
+#japanpckgs {
+  font-family: "Mansalva", cursive;
+}
+
+#exampleModalLabel {
+  font-family: "Mansalva", cursive;
+}
 /* .indiatheme,
 .cubatheme,
 .chinatheme {
