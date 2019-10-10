@@ -1,11 +1,15 @@
 $(document).ready(function(){
+    function User(user_name,user_password){
+        this.user_Name = user_name;
+        this.passWord = user_password;
+    }
 
     $("form#sign-in").submit(function(){
         event.preventDefault();
     var userName =$("#user_name").val();
     var pass =$("#password").val();
 
-    var obj={user_email:email, user_password:pass};
+    var obj=new User(userName,pass);
     var arr = JSON.parse(localStorage.getItem("user_details")) || [];
     arr.push(obj);
     localStorage.setItem("user_details", JSON.stringify(arr));
