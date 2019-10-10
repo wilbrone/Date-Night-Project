@@ -14,6 +14,12 @@ html {
   text-decoration: black;
 }
 
+/* ****************************************** */
+.menu{
+  /* border: solid; */
+  width: 65%;
+}
+
 .menu a {
   padding: 0 50px;
 }
@@ -330,6 +336,34 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+/* GIVES THE FIRST LETTER AS THE PROFILE PIC */
+#profileImage {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #512DA8;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 170%;
+
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  /* margin: 20px 0; */
+}
+.output{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+
+
+
+
 
 /* .indiatheme,
 .cubatheme,

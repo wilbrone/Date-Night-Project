@@ -1,9 +1,19 @@
 $(document).ready(function(){
     if (window.localStorage && localStorage.user_details) {
-        fontSize = localStorage.getItem("user_details");
-        console.log(fontSize)
-        // $(".output").textContent = "The font size has carried over pages, and is: " + fontSize;
-            // document.getElementById("output").style.fontSize = fontSize;
+        var fontSize = JSON.parse(localStorage.getItem("user_details"));
     };
-    
+    console.log(fontSize);
+
+
+    for(i=0; i<fontSize.length; i++){
+        var user = fontSize[i];
+
+    }
+    console.log(user);
+
+    $(".output").text("Welcome, " + user.user_Name.toUpperCase());
+
+    var letter = user.user_Name[0].toUpperCase();
+    console.log(letter);
+    $("#profileImage").text(letter);
 });
