@@ -1,9 +1,12 @@
 $(document).ready(function(){
+
+    // for login
     function User(user_name,user_password){
         this.user_Name = user_name;
         this.passWord = user_password;
     };
 
+    // for sign up
     function New_User(email,f_name,u_name,p_word){
         this.Email = email;
         this.fName = f_name;
@@ -66,6 +69,19 @@ $(document).ready(function(){
             pWord="";
         };
     });
+
+
+    // //THIS IS FOR LOADING THE DATA TO THE NEXT PAGE
+    // function loadData() {
+    //   // Get localstorage names
+    //   names = localStorage.names;
+    //   if(names){
+    //     // convert names into an array
+    //     names = JSON.parse(names);
+    //   } else {
+    //     //if no names found
+    //     names = [];
+    // } 
 
 
 
