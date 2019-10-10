@@ -12,8 +12,8 @@
     <nav id="landing" class="navbar sticky-top">
       <span id="logo" class="navbar-brand mb-0 h1">
         <img src="images/wheart.png" alt=""/> Date Night
-        <img src="images/wchampagne.png" alt=""
-      /></span>
+        <img src="images/wchampagne.png" alt=""/>
+      </span>
     </nav>
     <div id="landing-content" class="container">
       <div class="row">
@@ -43,11 +43,14 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title" id="head1">Login</h3>
-              <h3 class="card-title" id="head2">SignUp</h3>
+
+              <!-- this is hidden onload -->
+              <h3 class="card-title" id="head2">SignUp</h3> 
+
               <br />
               <hr />
               <br />
-              <form id="sign-in">
+              <form class="down" id="sign-in">
                 <div class="form-group" id="loginn">
                   <label for="user_name" style="float: left;">User Name</label
                   ><br />
@@ -66,12 +69,15 @@
                     id="password"
                     class="form-control"
                   /><br />
-                    <a href="index.html" style="text-decoration: none; color: white;">
-                      <button type="submit" class="btn-danger log">
-                          Login
-                      </button>
-                    </a>
-                  <button class="btn-danger sign">Sign Up</button> <br /><br />
+                  <!-- <a href="index.html" style="text-decoration: none; color: white;"> -->
+                    <button type="submit" class="btn-danger log">
+                        Login
+                    </button>
+                  <!-- </a> -->
+                  <!-- this toggles the sign up form -->
+                  <!-- <button class="btn-danger sign">Sign Up</button> <br /><br /> -->
+                  <button type="button" class="btn btn-danger" id="btr">Sign Up</button>
+
                   <hr />
                   <br />
                   <a href="#">Reset Password?</a>
@@ -79,14 +85,14 @@
               </form>
 
                 <!-- form for signup -->
-                <form id="sign-up">
+                <form class="up" id="sign-up">
                   <div class="form-group" id="signupp">
                     <!-- <label for="name" style="float: left;">Full Name</label> -->
                     <br />
                     <input
                       type="text"
-                      name="name"
-                      id="f_name"
+                      name="full_name"
+                      id="full_name"
                       class="form-control"
                       placeholder="Full Name"
                     />
@@ -116,16 +122,20 @@
                     <input
                       type="password"
                       name="password"
-                      id="password"
+                      id="p-word"
                       class="form-control"
                       placeholder="Password"
                     /><br />
-                    <button class="btn-danger log" id="cancel">Cancel</button>
-                    <a href="index.html" style="text-decoration: none; color: white;">
-                      <button type="submit" class="btn-danger signs" href="index.html">
+                    <!-- toggles back the sign in -->
+                    <!-- <button class="btn-danger log" id="cancel">Cancel</button> -->
+                  <button type="button" class="btn btn-danger" id="btr2">Cancel</button>
+
+
+                    <!-- <a href="index.html" style="text-decoration: none; color: white;"> -->
+                      <button type="submit" class="btn-danger log" href="index.html">
                           Sign Up
                       </button> <br /><br />
-                    </a>
+                    <!-- </a> -->
                   </div>
                 </form>
                 <!-- end of signup form -->

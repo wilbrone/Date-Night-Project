@@ -2,7 +2,18 @@ $(document).ready(function(){
     function User(user_name,user_password){
         this.user_Name = user_name;
         this.passWord = user_password;
-    }
+    };
+
+    function New_User(email,f_name,u_name,p_word){
+        this.Email = email;
+        this.fName = f_name;
+        this.uName = u_name;
+        this.pWord = p_word;
+    };
+
+    
+
+
 
     $("form#sign-in").submit(function(){
         event.preventDefault();
@@ -13,6 +24,16 @@ $(document).ready(function(){
     var arr = JSON.parse(localStorage.getItem("user_details")) || [];
     arr.push(obj);
     localStorage.setItem("user_details", JSON.stringify(arr));
+
+    // VALIDATION AND REDIRECTION TO NEXT PAGE...ON  SUCCESSFULL LOGIN
+    if(pass == "password"){
+            alert("Password correct...");  //this will show up if pword is right
+
+            window.location="index.html";  //this is not happening
+        }else{
+            alert("Invalid password...");  //this will show up if pword is wrong
+            pass="";
+        };
     });
 
 
@@ -20,33 +41,47 @@ $(document).ready(function(){
         event.preventDefault();
 
         var email =$("#email").val();
-        var full_name =$("f_name").val();
+        console.log(email);
+        var full_name =$("#full_name").val();
+        console.log(full_name);
         var uName =$("#u_name").val();
-        var pWord =$("#password").val();
-        alert(full_name);
+        console.log(uName);
+        var pWord =$("#p-word").val();
+        console.log(pWord);
         // var pWord =$("#password").val();
 
-        var obj_user={names:full_name, user_email:email, user_password:pWord, user_name:uName};
+        // this is the formart ***New_User(email,f_name,u_name,p_word)***
+        var obj_user=new New_User(email,full_name,uName,pWord);
+        console.log(obj_user);
         var new_arr = JSON.parse(localStorage.getItem("new_user")) || [];
         new_arr.push(obj_user);
         localStorage.setItem("new_user", JSON.stringify(new_arr));
+
+
+        // VALIDATION AND REDIRECTION TO NEXT PAGE...ON  SUCCESSFULL LOGIN
+        if(pWord !== ""){
+            window.location="index.html";  //this is not happening
+        }else{
+            alert("Invalid password...");  //this will show up if pword is wrong
+            pWord="";
+        };
     });
 
 
 
-    $(".sign").click(function(){
+    $("#btr").click(function(){
         $("#head1").toggle();
         $("#head2").toggle();
-        $("#sign-in").toggle();
-        $("#sign-up").toggle();
+        $(".down").toggle();
+        $(".up").toggle();
 
     });
 
-    $("#cancel").click(function(){
+    $("#btr2").click(function(){
         $("#head1").toggle();
         $("#head2").toggle();
-        $("#sign-in").toggle();
-        $("#sign-up").toggle();
+        $(".down").toggle();
+        $(".up").toggle();
 
     });
 
