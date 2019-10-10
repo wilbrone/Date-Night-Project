@@ -20,16 +20,16 @@ $(document).ready(function(){
 
     $("form#sign-in").submit(function(){
         event.preventDefault();
-    var userName =$("#user_name").val();
-    var pass =$("#password").val();
+        var userName =$("#user_name").val();
+        var pass =$("#password").val();
 
-    var obj=new User(userName,pass);
-    var arr = JSON.parse(localStorage.getItem("user_details")) || [];
-    arr.push(obj);
-    localStorage.setItem("user_details", JSON.stringify(arr));
+        var obj=new User(userName,pass);
+        var arr = JSON.parse(localStorage.getItem("user_details")) || [];
+        arr.push(obj);
+        localStorage.setItem("user_details", JSON.stringify(arr));
 
-    // VALIDATION AND REDIRECTION TO NEXT PAGE...ON  SUCCESSFULL LOGIN
-    if(pass == "password"){
+        // VALIDATION AND REDIRECTION TO NEXT PAGE...ON  SUCCESSFULL LOGIN
+        if(pass == "password"){
             alert("Password correct...");  //this will show up if pword is right
 
             window.location="index.html";  //this is not happening
@@ -37,6 +37,13 @@ $(document).ready(function(){
             alert("Invalid password...");  //this will show up if pword is wrong
             pass="";
         };
+
+
+        if (window.localStorage && localStorage.arr) {
+            fontSize = localStorage.getItem("user_details");
+            document.getElementById("output").textContent = "The font size has carried over pages, and is: " + user_details;
+            // document.getElementById("output").style.fontSize = fontSize;
+        }
     });
 
 
