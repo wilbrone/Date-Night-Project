@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function(){
 
     $("form#sign-in").submit(function(){
@@ -47,10 +46,8 @@ $(document).ready(function(){
 
     });
 
-});
-=======
-$(document).ready(function () {
 
+    // HOVER EFFECTS
     $(".cubatheme").mouseover(function () {
         $("#cubatext").show();
     });
@@ -92,5 +89,5 @@ $(document).ready(function () {
     $(".japantheme").mouseleave(function () {
         $("#japantext").hide();
     });
-})
->>>>>>> 4aad8413936772b66c93e184a497b04245b7fd60
+
+});
