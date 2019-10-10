@@ -38,12 +38,6 @@ $(document).ready(function(){
             pass="";
         };
 
-
-        if (window.localStorage && localStorage.arr) {
-            fontSize = localStorage.getItem("user_details");
-            document.getElementById("output").textContent = "The font size has carried over pages, and is: " + user_details;
-            // document.getElementById("output").style.fontSize = fontSize;
-        }
     });
 
 
@@ -76,20 +70,6 @@ $(document).ready(function(){
             pWord="";
         };
     });
-
-
-    // //THIS IS FOR LOADING THE DATA TO THE NEXT PAGE
-    // function loadData() {
-    //   // Get localstorage names
-    //   names = localStorage.names;
-    //   if(names){
-    //     // convert names into an array
-    //     names = JSON.parse(names);
-    //   } else {
-    //     //if no names found
-    //     names = [];
-    // } 
-
 
 
     $("#btr").click(function(){
