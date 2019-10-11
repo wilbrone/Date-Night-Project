@@ -296,7 +296,7 @@ hr {
 }
 
 #exampleModal2 {
-  background-image: url(../images/Cubanfood.jpeg);
+  background-image: url(../images/tango2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -326,6 +326,19 @@ hr {
 }
 
 
+#indiapckgs,
+#cubapckgs,
+#chinapckgs,
+#parispckgs,
+#egyptpckgs,
+#japanpckgs {
+  font-family: "Mansalva", cursive;
+}
+
+#exampleModalLabel {
+  font-family: "Mansalva", cursive;
+}
+
 /* GIVES THE FIRST LETTER AS THE PROFILE PIC */
 #profileImage {
   width: 60px;
@@ -347,11 +360,6 @@ hr {
   font-size: 1.2em;
   font-family: 'Oleo Script', cursive;
 }
-
-
-
-
-
 
 
 /* .indiatheme,
