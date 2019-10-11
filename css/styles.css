@@ -125,24 +125,12 @@ label {
   text-align: left;
 }
 
-.log,
-.sign {
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-top: 10px;
+#bttn,
+#btr{
+  margin-bottom: 10px;
 }
 
-.sign {
-  margin-left: 10px;
-}
-.log {
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-.log {
-  margin-left: 10px;
-}
+
 #date {
   margin: 20px 0 0 0;
   text-align: left;
