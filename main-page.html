@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+
   <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/scripts.js"></script>
+  <!-- <script src="js/scripts.js"></script> -->
+  <script src="js/scrpy.js"></script>
   <title>Date Night</title>
 </head>
 
 <body>
   <nav class="navbar sticky-top navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1"></span>
-    <img src="images/heart.png" alt="" /> Date Night
-    <img src="/images/iconmonstr-party-14-48.png" alt="" /></span>
+    <span class="navbar-brand mb-0 h1">
+      <img src="images/heart.png" alt="" /> <a id="link" href="#">Date Night</a> 
+      <img src="images/iconmonstr-party-14-48.png" alt="" />
+    </span>
     <div class="menu">
-      <span><a href="#themes">Themes</a></span>
-      <span><a href="#about-us">About Us</a></span>
-      <span> <a href="#team">Team</a></span>
-      <span><a href="#contact-us">Contact Us</a></span>
+      <span><a id="link" href="#themes">Themes</a></span>
+      <span><a id="link" href="#select-theme">Select Themes</a></span>
+      <span><a id="link" href="#about-us">About Us</a></span>
+      <span><a id="link" href="#contact-us">Contact Us</a></span>
+
+      <!-- THIS DISPLAYS THE CURRENT USER NAME -->
+      <!-- TRIAL OUTPUT -->
+      <span class="output"></span>
+      <div id="profileImage" width="10%"></div>
+      <button type="button" class="btn btn-outline-secondary" id="logout" style="float:right; width: 8%;">LogOut</button>
+
     </div>
   </nav>
   <br />
@@ -79,7 +89,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/Japan.jpg" class="d-block w-100" alt="..." />
+            <img src="images/japan.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Japan</h5>
               <p>
@@ -99,9 +109,9 @@
         </a>
       </div>
     </div>
-    <div>
-      <br /><br />
-      <h4 id="themes">Themes</h4>
+    <div id="themes">
+      <br /><br /><br><br><br>
+      <h4 >Themes</h4>
       <br />
       <p>
         With variety being the spice of life, here at Date Night we firmly
@@ -120,8 +130,8 @@
         planners.
       </p>
     </div>
-    <div>
-      <br /><br />
+    <div id="select-theme">
+        <br /><br /><br><br><br>
       <h4>Select Theme</h4>
       <br />
       <div class="row m-4">
@@ -166,7 +176,7 @@
       </div>
     </div>
     <div id="about-us">
-      <br /><br />
+        <br /><br /><br><br><br>
       <h4>About Us</h4>
       <br />
       <p>
@@ -179,116 +189,88 @@
       </p>
     </div>
     <div id="team">
-      <br /><br />
+        <br /><br /><br><br><br>
       <h4>The Team</h4>
       <br />
       <div class="row top">
         <div class="col-md-4">
-          <img class="profile img-fluid" src="/images/iconmonstr-user-20-120.png" alt="" />
+          <img class="profile img-fluid" src="images/iconmonstr-user-20-120.png" alt="" />
           <h5>Charles</h5>
           <h6>Founder</h6>
           <h6>Front-End Development</h6>
+          <h6>User Interface Design</h6>
+
         </div>
         <div class="col-md-4">
           <img class="profile img-fluid" src="images/koshin.jpg" alt="" />
           <h5>Koshin</h5>
           <h6>Co-founder</h6>
           <h6>Front-End Development</h6>
+          <h6>User Interface Design</h6>
         </div>
         <div class="col-md-4">
           <img class="profile img-fluid" src="images/iconmonstr-user-20-120.png" alt="" />
           <h5>Greg</h5>
           <h6>Co-founder</h6>
           <h6>Front-End Development</h6>
+          <h6>Scrum Master</h6>
         </div>
       </div>
       <div class="row bottom">
         <div class="col-md-6">
-          <img class="profile img-fluid" src="images/iconmonstr-user-20-120.png" alt="" />
+          <img class="profile img-fluid" src="images/IMG_20181112_001611_900.JPG" alt="" />
           <h5>Bella</h5>
           <h6>Co-founder</h6>
-          <h6>Back-End Development</h6>
+          <h6>Back-End</h6>
+          <h6>Business Logic & Debugging</h6>
         </div>
         <div class="col-md-6">
           <img class="profile img-fluid" src="images/WILBRONE-OKOTH.JPG" alt="" />
           <h5>Will</h5>
           <h6>Co-founder</h6>
-          <h6>Back-End Development</h6>
+          <h6>Back-End</h6>
+          <h6>Business Logic & Debugging</h6>
         </div>
       </div>
     </div>
-    <div>
-      <br /><br />
+  </div>
+  <div id="contact-us">
+      <br /><br /><br><br><br>
       <h4 id="contact-us">Contact Us</h4>
       <br />
       <div class="row">
-        <div id="info" class="col-md-6">
-          <h1
-            id="date"
-            style="border-bottom: 1px solid white; padding-bottom: 23px; "
-          >
-            Date Night
-          </h1>
-          <br />
-          <p id="slogan">"Saving relationships 1 date at a time"</p>
-          <br />
-          <p>
-            Welcome to Date Night. We are the premier date experience platform
-            providing you with theme based dates like no other.
-          </p>
-          <br />
-          <p>
-            Once you sign up you'll get access to various themes to you can
-            choose from and we'll provide the set-up, cuisine, activities, and
-            any other necessary items to make this experience the best you've
-            ever had.
-          </p>
+          <div class="col-md-12 contact-info">
+             <span><img class="visit" src="images/location.png" alt=""><strong>Address:</strong> 3453 Ngong Ln</span> &nbsp; &nbsp;
+              <span><img class="call" src="images/phone.png" alt=""><strong>Tel:</strong> 070 000 DATE</span> &nbsp; &nbsp;
+              <span><img class="message" src="images/mail.png" alt=""> &nbsp; <strong>E-mail:</strong> Date@datenight.com</span>
+            </div>
+        <div class="col-md-12 contact-info">
+          <div class="mapouter"> 
+            <div class="gmap_canvas img-fluid"> 
+              <iframe width="1200" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Ngong%20lane&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> </iframe>
+            </div> 
+            <style>.mapouter{position:relative;text-align:right;height:400px;width:1200px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:1200px;}</style>
+           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title" id="head1">Login</h3>
+      </div>
+    </div>
+  <br /><br />
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <div class="container">
+      <div class="row icons">
+        <img class="img-fluid social" src="images/iconmonstr-facebook-5-72.png" alt="" />
 
-              <!-- this is hidden onload -->
-              <h3 class="card-title" id="head2">SignUp</h3> 
+        <img class="img-fluid social" src="images/iconmonstr-twitter-5-72.png" alt="" />
 
-              <br />
-              <hr />
-              <br />
-              <form class="down" id="sign-in">
-                <div class="form-group" id="loginn">
-                  <label for="user_name" style="float: left;">User Name</label
-                  ><br />
-                  <input
-                    type="text"
-                    name="user_name"
-                    id="user_name"
-                    class="form-control"
-                    required
-                  />
-                  <br />
-                  <label for="password" style="float: left;">Password</label
-                  ><br />
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    class="form-control"
-                    required
-                  /><br />
+        <img class="img-fluid social" src="images/iconmonstr-instagram-15-72.png" alt="" />
 
-                    <button type="submit" class="btn btn-danger log" id="bttn">
-                        Login
-                    </button>
-                  <!-- this toggles the sign up form -->
-                  <!-- <button class="btn-danger sign">Sign Up</button> <br /><br /> -->
-                  <button type="button" class="btn btn-danger" id="btr">Sign Up</button>
+        <img class="img-fluid social" src="images/iconmonstr-whatsapp-5-72.png" alt="" />
 
-                  <hr />
-                  <br />
-                  <a href="#">Reset Password?</a>
-                </div>
-              </form>
+        <img class="img-fluid social" src="images/iconmonstr-youtube-5-72.png" alt="" />
+      </div>
+    </div>
+  </nav>
 
   <!-- Button trigger modal -->
   <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -307,23 +289,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <p id="indiapckgs">
-            <strong>Package</strong>
-            <br>
-            <strong>Food </strong>: All inclusive private Chef with your choice of any Indian cuisine
-            <br>
-            <strong>Acivity</strong>: (any Indian related activity for the night )
-            <br>
-            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
-            travel to different city
-            <br>
-            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
-            <br>
-            <strong>Pricing</strong>: Contact us at package@datenight.com
-          </p>
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
@@ -340,24 +310,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <p id="cubapckgs">
-            <strong>Package</strong>
-            <br>
-            <strong>Food </strong>: All inclusive private Chef with your choice of any Cuban cuisine
-            <br>
-            <strong>Acivity</strong>: (any Cuban related activity for the night )
-            <br>
-            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
-            travel
-            to different city
-            <br>
-            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
-            <br>
-            <strong>Pricing</strong>: Contact us at package@datenight.com
-          </p>
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
@@ -375,24 +332,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <p id="chinapckgs">
-            <strong>Package</strong>
-            <br>
-            <strong>Food </strong>: All inclusive private Chef with your choice of any Chinese cuisine
-            <br>
-            <strong>Acivity</strong>: (any Chinesne related activity for the night )
-            <br>
-            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
-            travel
-            to different city
-            <br>
-            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
-            <br>
-            <strong>Pricing</strong>: Contact us at package@datenight.com
-          </p>
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
@@ -409,24 +353,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <p id="parispckgs">
-            <strong>Package</strong>
-            <br>
-            <strong>Food </strong>: All inclusive private Chef with your choice of any French cuisine
-            <br>
-            <strong>Acivity</strong>: (any French related activity for the night )
-            <br>
-            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
-            travel
-            to different city
-            <br>
-            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
-            <br>
-            <strong>Pricing</strong>: Contact us at package@datenight.com
-          </p>
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
@@ -443,24 +374,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <p id="egyptpckgs">
-            <strong>Package</strong>
-            <br>
-            <strong>Food </strong>: All inclusive private Chef with your choice of any Egyptian cuisine
-            <br>
-            <strong>Acivity</strong>: (any egyptian related activity for the night )
-            <br>
-            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
-            travel
-            to different city
-            <br>
-            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
-            <br>
-            <strong>Pricing</strong>: Contact us at package@datenight.com
-          </p>
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
@@ -477,82 +395,25 @@
           </button>
         </div>
         <div class="modal-body">
-          <p id="japanpckgs">
-            <strong>Package</strong>
-            <br>
-            <strong>Food </strong>: All inclusive private Chef with your choice of any Japanese cuisine
-            <br>
-            <strong>Acivity</strong>: ( any Japanese related activity for the night )
-            <br>
-            At your request residence or hotel of your choice breakfast included with optional Helicopter ride for
-            travel to different city
-            <br>
-            <strong>Styling</strong>: (repaint/refurnish your home or chosen place)
-            <br>
-            <strong>Pricing</strong>: Contact us at package@datenight.com
-          </p>
+          ...
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <!-- form for signup -->
-                <form class="up" id="sign-up">
-                  <div class="form-group" id="signupp">
-                    <br />
-                    <input
-                      type="text"
-                      name="full_name"
-                      id="full_name"
-                      class="form-control"
-                      placeholder="Full Name"
-                      required
-                    />
-                    <br />
-                    
-                    <input
-                      type="text"
-                      name="u_name"
-                      id="u_name"
-                      class="form-control"
-                      placeholder="User Name"
-                      required
-                    />
-                    <br />
-                    
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      placeholder="Email Address"
-                      required
-                    />
-                    <br />
-                    
-                    <input
-                      type="password"
-                      name="password"
-                      id="p-word"
-                      class="form-control"
-                      placeholder="Password"
-                      required
-                    /><br />
-
-                    <!-- toggles back the sign in -->
-                    <!-- <button class="btn-danger log" id="cancel">Cancel</button> -->
-                  <button type="button" class="btn btn-danger" id="btr2">Cancel</button>
-
-
-                      <button type="submit" class="btn btn-danger log">
-                          Sign Up
-                      </button> <br /><br />
-                  </div>
-                </form>
-                <!-- end of signup form -->
-
-            </div>
-          </div>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
