@@ -329,6 +329,10 @@ label[for="password"] {
 #exampleModalLabel {
   font-family: "Mansalva", cursive;
 }
+
+a:hover{
+  text-decoration: underline;
+}
 /* .indiatheme,
 .cubatheme,
 .chinatheme {
