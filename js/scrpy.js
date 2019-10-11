@@ -36,6 +36,6 @@ $(document).ready(function(){
 // CLEARS THE DATA FROM THE LOCAL STORAGE AND REDIRECTS TO LOGIN PAGE(LANDING-PAGE)
     $("#logout").click(function(){
        localStorage.clear();
-       window.location="landing-page.html"; 
+       window.location="index.html"; 
     });
 });

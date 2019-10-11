@@ -32,7 +32,7 @@ $(document).ready(function(){
         if(pass == "password"){
             alert("Password correct...");  //this will show up if pword is right
 
-            window.location="index.html";  //this is not happening
+            window.location="main-page.html";  //this is not happening
         }else{
             alert("Invalid password...");  //this will show up if pword is wrong
             pass="";
@@ -64,7 +64,7 @@ $(document).ready(function(){
 
         // VALIDATION AND REDIRECTION TO NEXT PAGE...ON  SUCCESSFULL LOGIN
         if(pWord !== ""){
-            window.location="index.html";  //this is not happening
+            window.location="main-page.html";  //this is not happening
         }else{
             alert("Invalid password...");  //this will show up if pword is wrong
             pWord="";
